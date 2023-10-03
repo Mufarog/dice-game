@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dice game</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: rgb(233, 7, 7);
+        }
+
+        #game-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        #dice1 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 10px;
+            text-align: center;
+            font-size: 24px;
+            color: rgb(251, 248, 248);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        #dice2 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 10px;
+            text-align: center;
+            font-size: 24px;
+            color: rgb(254, 252, 252);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        #dice:hover {
+            background-color: #9966CC; /* Lighter lavender on hover */
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Dice Game</h1></center>
+    <center><div id="container">
+        <h2>Rules of the Game:</h2><br>
+        <ol>
+            <li>Players decide who will be "Player 1" and who will be "Player 2" </li>
+            <li>Click the button labeled "Roll both dice" to roll the dice</li>
+            <li>After clicking a number will appear on each dice</li>
+            <li>The player thar recieves a higher score wins the round</li>
+        </ol>
+    </div></center>
+
+   <center><div id="game-container">
+
+    <div>
+        <center><h3>Player 1</h3></center>
+        <div class="dice-container">
+            <div id="dice1" class="dice">6</div>
+        </div>
+    </div>
+    <div>
+        <center><h3>Player 2</h3></center>
+        <div class="dice-container">
+            <div id="dice2" class="dice">6</div>
+        </div>
+    </div>
+    <button id="roll-button">Roll Both Dice</button>
+</div>
+</center> 
+    
+    
+    
+    
+   
+   <script src="index.js"></script>
+</body>
+</html>
